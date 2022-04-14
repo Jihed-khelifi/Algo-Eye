@@ -1,0 +1,12 @@
+{
+  "name": "projet-web",
+  "version": "1.0.0",
+  "description": "algorithm visualizer",
+  "main": "server.js",
+  "scripts": {
+    "test": "run test",
+    "start": "node server.js"
+  },
+  "author": "Jihed Khelifi",
+  "license": "ISC"
+}
