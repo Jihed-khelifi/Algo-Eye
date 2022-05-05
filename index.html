@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"> 
-    <script type="module" src="./script.js" ></script>
+    <link rel="stylesheet" href="./Styles/styles.css"> 
+    <script defer src="./SortFunctions/bubble.js"></script>
+    <script defer src="./SortFunctions/QuickSort.js" ></script>
+    <script defer src="./SortFunctions/merge.js"></script>
+    <script defer src="./SortFunctions/insertion.js"></script>
+    <script defer src="./SortFunctions/selection.js"></script>
+    <script defer src="./SortFunctions/heap.js"></script>
+    <script defer src="./main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;500&family=Laila:wght@300;500&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -16,7 +25,7 @@
             <div class="Algorithms">
                 <h3 class="subtitle">Algorithms</h3>
                 <ul class="list">
-                    <li>QuickSort</li>
+                    <li>Quick</li>
                     <li>Bubble</li>
                     <li>Merge</li>
                     <li>Insertion</li>
@@ -32,12 +41,18 @@
     </header>
     <main class="main-wrapper">
         <div class="settings">
-            <label for="size">set array size</label>
-            <input type="number" id="size">
-            <button class="generate-button">Generate</button>
+            <form>
+                <div class="generate-array">
+                    <input type="text" id="size" placeholder="Give an array size between 0 and 40" class="number-input">
+                    <button class="generate-button btn btn-generate">Generate</button>
+                </div>
+            </form>
         </div>
-        <div class="elements"></div>
-        <button onclick="sort()">Sort Array</button>
+        <div class="elements">
+            <div id="array"></div>
+            <div id="count"></div>
+        </div>
+        <button class="btn btn-sort">Sort Array"</button>
     </main>
 </body>
 </html>

@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Karma', serif;
+}
+.wrapper{
+    height: 100vh;
+    position: fixed;
+    background-color: blueviolet;
+    padding: 0 5%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    transition: max-width 5s ease-in-out;
+    z-index: 1;
+}
+.open-tab{
+    display: flex;
+    width: 25vw;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: aqua;
+    padding: 5%;
+}
+.toggle-tab{
+    position: fixed;
+    z-index: 2;
+    font-size: large;
+}
+.main-wrapper{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.elements{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    height: 410px;
+    max-width: max-content;
+}
+.element{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 20px;
+    font-size: large;
+    padding: 0px 10px;
+    background-color: rgb(130, 110, 246);
+}
+.btn{
+    padding: 12px 22px;
+    background-color: rgb(162, 5, 130);
+    color: beige;
+    font-size: large;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+}
+.btn-generate{
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+}
+.btn-sort{
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 15px -6px #000000; 
+    box-shadow: 0px 0px 15px -6px #000000;
+}
+.btn-sort:hover{
+    background-color: rgb(162, 5, 130);
+    color: beige;
+    -webkit-box-shadow: 0px 0px 15px -6px #000000; 
+    box-shadow: 0px 0px 15px -6px inset #000000;
+    padding: 12px 22px;
+}
+.generate-array{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.number-input{
+    padding: 9px 18px;
+    outline: none;
+    border: none;
+    width: 360px;
+    font-size: larger;
+    background-color: transparent;
+    color: black;
+}
+
+/* style for heap sort */
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.header {
+	font-size: 20px;
+	text-align: center;
+}
+
+#array {
+	background-color: white;
+	height: 270px;
+	width: 598px;
+	margin: auto;
+	position: relative;
+	margin-top: 64px;
+}
+
+.block {
+	width: 28px;
+	background-color: #6b5b95;
+	position: absolute;
+	bottom: 0px;
+	transition: 0.2s all ease;
+}
+
+.block_id {
+	position: absolute;
+	color: black;
+	margin-top: -20px;
+	width: 100%;
+	text-align: center;
+}
+
+.block_id2 {
+	position: absolute;
+	color: black;
+	margin-top: 22px;
+	width: 100%;
+	text-align: center;
+}
+
+.block2 {
+	width: 28px;
+	background-color: darkgray;
+	position: absolute;
+	transition: 0.2s all ease;
+}
+
+.block_id3 {
+	position: absolute;
+	color: black;
+	margin-top: 1px;
+	width: 100%;
+	text-align: center;
+}
+
+#count {
+	height: 20px;
+	width: 598px;
+	margin: auto;
+}
